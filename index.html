@@ -5,17 +5,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content />
         <meta name="author" content />
-        <title>Ruben Empire</title>
+        <title> Ruben Empire</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Style du preloader */
+            #preloader {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                background: rgba(255, 255, 255, 0.1); /* Fond très léger */
+            backdrop-filter: blur(10px); /* Effet de flou */
+            }
+    
+            /* Logo animé */
+            #preloader img {
+                width: 100px; /* Taille du logo */
+            animation: rotate 1.5s linear infinite;
+            }
+    
+            @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        </style>
     </head>
     <body class="d-flex flex-column">
+        <!-- Preloader avec le logo -->
+    <div id="preloader">
+        <img src="assets/favicon.ico" alt="Logo">
+    </div>
+
+   
+
+    <script>
+        // Attendre 3 secondes avant d'afficher le contenu
+        setTimeout(function() {
+            document.getElementById("preloader").style.display = "none"; // Cacher le preloader
+            document.getElementById("content").style.display = "block"; // Afficher le contenu
+        }, 250); // 3000 ms = 3 secondes
+    </script>
         <main class="flex-shrink-0">
             
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
@@ -39,7 +79,7 @@
                         <div class="col-xxl-5">
                         
                             <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Conception &middot; Développement &middot; Marketing</div></div>
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Conception &middot; Développement &middot; Réalisation & Production Audiovisuelle</div></div>
                                 <div class="fs-3 fw-light text-muted">Je peux aider votre entreprise à </div>
                                 <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline"></span>se connecter et à se développer rapidement</h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
@@ -179,8 +219,8 @@
                         <div class="col-xxl-8">
                             <div class="text-center my-5">
                                 <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">A propos de moi</span></h2>
-                                <p class="lead fw-light mb-4">Mon nom est <strong>IKOUO OKOMBO Ruben Richard</strong> plus connu sous le nom de <strong>Ruben Empire</strong> et j'aide les marques à se développer</p>
-                                <p class="text-muted"> Je suis un passionné de la programmation et un architecte de solutions Fullstack. Mon amour pour le code m'a conduit à explorer les deux côtés du spectre du développement, de la création d'interfaces utilisateur intuitives à la mise en place d'infrastructures robustes côté serveur. Et je suis également comédien à mes heures perdus 😉</p>
+                                <p class="lead fw-light mb-4">Mon nom est <strong>IKOUO OKOMBO Ruben Richard</strong> plus connu sous le nom de <strong>Ruben Empire</strong> et j'aide les marques à se développer.</p>
+                                <p class="text-muted">À la fois architecte de solutions Fullstack et réalisateur passionné, mon objectif est de faire briller les marques tout en racontant des histoires captivantes. Du code qui structure l’invisible aux écrans qui révèlent des mondes, je maîtrise les deux faces de la création. Que ce soit derrière un ordinateur pour coder des expériences immersives ou derrière la caméra pour donner vie à des projets visuels, je suis aussi comédien à mes heures perdues. Parce que la créativité, c’est tout un spectacle, non ? 😉</p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
                                     <a class="text-gradient" href="https://www.facebook.com/ruben.empire.77/?paipv=0&eav=AfaZlVYFwcur2Rb9yxkkE7XhokmlKa8UJWNSw1XghNAKxOlECFuk_Pwnul0XcC_WyWg&_rdr"><i class="bi bi-facebook"></i></a>
                                     <a class="text-gradient" href="https://www.linkedin.com/in/ruben-richard-ikouo-okombo-093782274/"><i class="bi bi-linkedin"></i></a>
